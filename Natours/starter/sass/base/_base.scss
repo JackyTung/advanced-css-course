@@ -1,9 +1,16 @@
 *,
 *::after,
-&::before {
+*::before {
     margin: 0;
     padding: 0;
     box-sizing: inherit;
+}
+
+html {
+    // This defines what 1rem is, 10/16=0.625
+    // The default font-size is 16,
+    // so, we set 10(62.5%) as our base unit
+    font-size: 62.5%;
 }
 
 body {
